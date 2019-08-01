@@ -1,0 +1,16 @@
+{
+  "name": "ngx-metronic-components",
+  "version": "0.0.1",
+  "description": "Angular components for Metronic",
+  "author": "Lucas Blanco",
+  "repository": "github:LucasBlanco/metronicAngularComp",
+  "keywords": [
+    "angular",
+    "metronic"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "@angular/common": "^7.2.0",
+    "@angular/core": "^7.2.0"
+  }
+}

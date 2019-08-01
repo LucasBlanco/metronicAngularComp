@@ -1,0 +1,23 @@
+<div class="m-accordion m-accordion--default m-accordion--toggle-arrow" id="m_accordion_5" role="tablist">
+  <!--begin::Item-->
+  <div class="m-accordion__item m-accordion__item--brand">
+    <div class="m-accordion__item-head collapsed" role="tab" id="m_accordion_5_item_3_head" data-toggle="collapse"
+      href="#m_accordion_5_item_3_body" aria-expanded="    false">
+      <span class="m-accordion__item-icon">
+        <i class="fa  flaticon-list-3"></i>
+      </span>
+      <span class="m-accordion__item-title"> {{titulo}}</span>
+
+      <span class="m-accordion__item-mode"></span>
+    </div>
+
+    <div class="m-accordion__item-body collapse" id="m_accordion_5_item_3_body" role="tabpanel"
+      aria-labelledby="m_accordion_5_item_3_head" data-parent="#m_accordion_5">
+      <div class="m-accordion__item-content">
+        <ng-content select="m-my-accordion-body"></ng-content>
+        <ng-content select="m-my-accordion-footer"></ng-content>
+      </div>
+    </div>
+  </div>
+  <!--end::Item-->
+</div>

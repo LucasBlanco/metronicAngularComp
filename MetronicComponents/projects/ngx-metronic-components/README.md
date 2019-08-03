@@ -1,7 +1,17 @@
 # 1. Metronic Angular Components
 
+<!-- TOC -->
+[1. Metronic Angular Components](#1-metronic-angular-components)
+[1.1. Modal](#11-modal)
+[1.2. Accordion](#12-accordion)
+[1.3. Portlet](#13-portlet)
+[1.4. Tabla (Datatable.js)](#14-tabla-datatablejs)
+[1.5. Tabs](#15-tabs)
+[1.6. Estadisticas (Chart.js)](#16-estadisticas-chartjs)
+[1.6.1. Grafico torta basico](#161-grafico-torta-basico)
+<!-- /TOC -->
 
-## Modal
+## 1.1. Modal
 
 * idModal: number
 * titulo: string
@@ -51,7 +61,7 @@ ngOnInit(){
 
 ```
 
-## Accordion
+## 1.2. Accordion
 
 * titulo: string
 
@@ -66,7 +76,7 @@ ngOnInit(){
 </m-my-accordion>
 ```
 
-## Portlet
+## 1.3. Portlet
 
 ```html
 <m-portlet-container>
@@ -82,8 +92,7 @@ ngOnInit(){
 </m-portlet-container>
 ```
 
-## Tabla 
-####Datatable.js
+## 1.4. Tabla (Datatable.js)
 
 * datos: any[]
 * nombreColumnas: string[]
@@ -155,8 +164,7 @@ ngOnInit(){
     mostrarDosDecimales = (saldo) => saldo.toFixed(2)
 ```
 
-
-## Tabs
+## 1.5. Tabs
 
 * active: boolean = false
 * titulo: string
@@ -172,9 +180,7 @@ ngOnInit(){
 </m-tabs>
 ```
 
-## Estadisticas
-
-### Chart.js
+## 1.6. Estadisticas (Chart.js)
 
 (Simplificado por que es un quilombo)
 
@@ -215,12 +221,12 @@ Se proveen las interfaces
     colores?: { nombre: string, color: string }[]
 }
 
-### Grafico torta basico
+### 1.6.1. Grafico torta basico
 
 ```html
 <app-grafico-borras
     [valores]="misValores"
->   
+>
 </app-grafico-barras>
 ```
 

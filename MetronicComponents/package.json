@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build-publish": "ng build NgxMetronicComponents && cd dist/ngx-metronic-components && npm publish",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"

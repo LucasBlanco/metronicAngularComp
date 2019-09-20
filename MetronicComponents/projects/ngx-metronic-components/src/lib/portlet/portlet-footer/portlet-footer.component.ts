@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'm-portlet-footer',
+  selector: 'mc-portlet-footer',
   template: `<div class="m-portlet__foot">
   <ng-content></ng-content>
 

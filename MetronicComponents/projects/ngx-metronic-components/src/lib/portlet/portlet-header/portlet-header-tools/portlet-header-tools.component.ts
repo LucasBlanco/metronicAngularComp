@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'm-portlet-header-tools',
+  selector: 'mc-portlet-header-tools',
   template: `<div class="m-portlet__head-tools">
   <ul class="m-portlet__nav">
     <li class="m-portlet__nav-item">

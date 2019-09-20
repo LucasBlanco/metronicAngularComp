@@ -3,7 +3,7 @@ import { Component, Input } from '@angular/core';
 import * as Modelos from '../../../../models/generales';
 
 @Component({
-    selector: 'm-lista',
+    selector: 'mc-lista',
     templateUrl: './lista.component.html',
 })
 

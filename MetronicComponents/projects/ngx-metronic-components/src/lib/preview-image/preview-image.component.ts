@@ -1,7 +1,7 @@
-import {Component,OnInit, Input} from '@angular/core';
-declare var $: any
+import { Component, OnInit, Input } from '@angular/core';
+declare var $: any;
 @Component({
-  selector: 'app-preview-image',
+  selector: 'mc-preview-image',
   template: `
     <!-- Trigger the Modal -->
 
@@ -24,30 +24,30 @@ declare var $: any
   `,
   styleUrls: ['./preview-image.component.css']
 })
-export class PreviewImageComponent{
+export class PreviewImageComponent {
 
   @Input() url;
 
-  constructor() {}
-  
+  constructor() { }
+
   ngAfterViewInit() {
     // Get the modal
-    
-  /*  var modal = document.getElementById('modalImg');
 
-    // Get the image and insert it inside the modal - use its "alt" text as a caption
-    var img = document.getElementById('myImg');
-    var modalImg = document.getElementById("img01");
-    var captionText = document.getElementById("caption");
-    img.onclick = function () {
-      modal.style.display = "block";
-      (modalImg as any).src = (this as any).src;
-      captionText.innerHTML = (this as any).alt;
-    }*/
+    /*  var modal = document.getElementById('modalImg');
+  
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = document.getElementById('myImg');
+      var modalImg = document.getElementById("img01");
+      var captionText = document.getElementById("caption");
+      img.onclick = function () {
+        modal.style.display = "block";
+        (modalImg as any).src = (this as any).src;
+        captionText.innerHTML = (this as any).alt;
+      }*/
   }
   // Get the modal
 
-  cerrar(){
-    $("#modalImg").modal('hide')
+  cerrar() {
+    $('#modalImg').modal('hide');
   }
 }

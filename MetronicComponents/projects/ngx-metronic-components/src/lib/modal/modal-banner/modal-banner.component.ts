@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-    selector: 'm-modal-banner',
-    template: `<div style="
+  selector: 'mc-modal-banner',
+  template: `<div style="
     background: #303140;
     color: white;
     padding: 25px;">
@@ -11,9 +11,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ModalBannerComponent implements OnInit {
 
-    constructor() { }
+  constructor() { }
 
-    ngOnInit() {
-    }
+  ngOnInit() {
+  }
 
 }

@@ -1,7 +1,7 @@
 import {Component, Input, Output, EventEmitter,OnInit} from '@angular/core';
 
 @Component({
-  selector: 'm-typeahead',
+  selector: 'mc-typeahead',
   template: `
 	  
 		  <div class="search-results">

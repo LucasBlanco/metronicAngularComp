@@ -4,7 +4,7 @@ import { IndicadorI } from '../interfacesGraficos';
 import { trigger, state, style, transition, animate } from '@angular/animations';
 
 @Component({
-    selector: 'app-indicadores',
+    selector: 'mc-indicadores',
     templateUrl: './indicadores.component.html',
     animations: [
         trigger('load', [
@@ -19,35 +19,35 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
 })
 export class IndicadoresComponent extends Grafico implements OnInit, AfterViewInit {
 
-    @Input() indicadores: Array<IndicadorI> = []
-    @Input() titulo: string = ''
-    @Input() countUp = false
+    @Input() indicadores: Array<IndicadorI> = [];
+    @Input() titulo = '';
+    @Input() countUp = false;
 
 
     ngOnInit() {
-        this.indicadores.map(({ color, ...n }) => ({ color: color ? color : this.getColor(), ...n }))
+        this.indicadores.map(({ color, ...n }) => ({ color: color ? color : this.getColor(), ...n }));
     }
     ngAfterViewInit() {
         if (this.countUp) {
             this.indicadores.forEach((ind, i) => {
-                this.runCountUp('indicador' + i)
-                this.asingProgressbarValue('indicador' + i, ind)
-            })
+                this.runCountUp('indicador' + i);
+                this.asingProgressbarValue('indicador' + i, ind);
+            });
 
         }
     }
 
-    calcularCambioAbsoluto = (actual, anterior) => Math.abs(Number(this.calcularCambio(actual, anterior))).toFixed(2)
+    calcularCambioAbsoluto = (actual, anterior) => Math.abs(Number(this.calcularCambio(actual, anterior))).toFixed(2);
 
-    calcularCambio = (actual, anterior) => ((actual - anterior) * 100 / anterior).toFixed(2)
+    calcularCambio = (actual, anterior) => ((actual - anterior) * 100 / anterior).toFixed(2);
 
 
 
     asingProgressbarValue(id, { valorActual, valorAnterior = 0 }) {
         setTimeout(
             () => {
-                const progressBar = document.getElementById('progress-' + id)
-                progressBar.style.width = this.calcularCambioAbsoluto(valorActual, valorAnterior) + '%'
+                const progressBar = document.getElementById('progress-' + id);
+                progressBar.style.width = this.calcularCambioAbsoluto(valorActual, valorAnterior) + '%';
             }
             , 0);
     }

@@ -1,8 +1,8 @@
-import { Component, OnInit, Input } from "@angular/core";
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: "m-portlet-header",
-  styleUrls: ["./portlet-header.component.scss"],
+  selector: "mc-portlet-header",
+  styleUrls: ['./portlet-header.component.scss'],
   template: `
     <div class="m-portlet__head dark-header">
       <div class="m-portlet__head-caption ">
@@ -25,14 +25,14 @@ import { Component, OnInit, Input } from "@angular/core";
 export class PortletMHeaderComponent implements OnInit {
   @Input() icon: string = null;
   @Input() title: string = null;
-  iconIsImg: boolean = false
+  iconIsImg = false;
 
 
   constructor() { }
 
   ngOnInit() {
     if (this.icon.includes('.') || this.icon.includes('/')) {
-      this.iconIsImg = true
+      this.iconIsImg = true;
     }
   }
 

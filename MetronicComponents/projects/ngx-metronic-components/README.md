@@ -1,15 +1,6 @@
 # 1. Metronic Angular Components
 
-<!-- TOC -->
-[1. Metronic Angular Components](#1-metronic-angular-components)
-[1.1. Modal](#11-modal)
-[1.2. Accordion](#12-accordion)
-[1.3. Portlet](#13-portlet)
-[1.4. Tabla (Datatable.js)](#14-tabla-datatablejs)
-[1.5. Tabs](#15-tabs)
-[1.6. Estadisticas (Chart.js)](#16-estadisticas-chartjs)
-[1.6.1. Grafico torta basico](#161-grafico-torta-basico)
-<!-- /TOC -->
+<!-- TOC -->autoauto- [1. Metronic Angular Components](#1-metronic-angular-components)auto    - [1.1. Modal](#11-modal)auto    - [1.2. Accordion](#12-accordion)auto    - [1.3. Portlet](#13-portlet)auto    - [1.4. Tabla (Datatable.js)](#14-tabla-datatablejs)auto    - [1.5. Tabs](#15-tabs)auto    - [1.6. Estadisticas (Chart.js)](#16-estadisticas-chartjs)auto        - [1.6.1. Grafico torta basico](#161-grafico-torta-basico)autoauto<!-- /TOC -->
 
 ## 1.1. Modal
 
@@ -18,17 +9,17 @@
 * hideModal: boolean = false
 
 ```html
-<m-modal [idModal]="1" [titulo]="'My modal" [hideHeader]="false">
-    <m-modal-banner>
+<mc-modal [idModal]="1" [titulo]="'My modal" [hideHeader]="false">
+    <mc-modal-banner>
         Banner del modal
-    </m-modal-banner>
-    <m-modal-body>
+    </mc-modal-banner>
+    <mc-modal-body>
         Cuerpo del Modal
-    </m-modal-body>
-    <m-modal-footer>
+    </mc-modal-body>
+    <mc-modal-footer>
         Footer del Modal
-    </m-modal-footer>
-</m-modal>
+    </mc-modal-footer>
+</mc-modal>
 ```
 
 ```javascript
@@ -66,30 +57,30 @@ ngOnInit(){
 * titulo: string
 
 ```html
-<m-my-accordion [titulo]="'My accordion" >
-    <m-my-accordion-body>
+<mc-accordion [titulo]="'My accordion" >
+    <mc-accordion-body>
         Cuerpo del Accordion
-    </m-my-accordion-body>
-    <m-my-accordion-footer>
+    </mc-accordion-body>
+    <mc-accordion-footer>
         Footer del Accordion
-    </m-my-accordion-footer>
-</m-my-accordion>
+    </mc-accordion-footer>
+</mc-accordion>
 ```
 
 ## 1.3. Portlet
 
 ```html
-<m-portlet-container>
-    <m-portlet-header>
+<mcc-portlet-container>
+    <mcc-portlet-header>
         Header del Portlet
-    </m-portlet-header>
-    <m-portlet-body>
+    </mcc-portlet-header>
+    <mcc-portlet-body>
         Cuerpo del Portlet
-    </m-portlet-body>
-    <m-portlet-footer>
+    </mcc-portlet-body>
+    <mcc-portlet-footer>
         Footer del Portlet
-    </m-portlet-footer>
-</m-portlet-container>
+    </mcc-portlet-footer>
+</mcc-portlet-container>
 ```
 
 ## 1.4. Tabla (Datatable.js)
@@ -107,7 +98,7 @@ ngOnInit(){
 * pipes = {}
 
 ```html
-<m-tabla
+<mc-tabla
     [datos]="misDatos"
     [nombreColumnas]="['Nombre', 'Saldo Neto']"
     [valorColumnas]="['nombre','saldo']"
@@ -120,7 +111,7 @@ ngOnInit(){
     [acciones]="misAcciones"
     [pipes]="misPipes"
 >
-</m-tabla>
+</mc-tabla>
 ```
 
 ```javascript
@@ -170,14 +161,14 @@ ngOnInit(){
 * titulo: string
 
 ```html
-<m-tabs>
-    <m-tab-item [active]="true" titulo="Tab 1">
+<mc-tabs>
+    <mc-tab-item [active]="true" titulo="Tab 1">
     Cuerpo del tab 1
-    </m-tab-item>
-    <m-tab-item titulo="Tab 2">
+    </mc-tab-item>
+    <mc-tab-item titulo="Tab 2">
     Cuerpo del tab 2
-    </m-tab-item>
-</m-tabs>
+    </mc-tab-item>
+</mc-tabs>
 ```
 
 ## 1.6. Estadisticas (Chart.js)
@@ -224,10 +215,10 @@ Se proveen las interfaces
 ### 1.6.1. Grafico torta basico
 
 ```html
-<app-grafico-borras
+<mc-grafico-borras
     [valores]="misValores"
 >
-</app-grafico-barras>
+</mc-grafico-barras>
 ```
 
 ```javascript

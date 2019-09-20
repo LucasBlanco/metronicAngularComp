@@ -3,8 +3,8 @@ import { Component, Input } from '@angular/core';
 import * as Modelos from '../../../../models/generales';
 
 @Component({
-    selector: 'modalTabla',
-    templateUrl: "./modalTabla.component.html",
+    selector: 'mc-modal-tabla',
+    templateUrl: './modalTabla.component.html',
 })
 
 export class ModalTablaComponent {

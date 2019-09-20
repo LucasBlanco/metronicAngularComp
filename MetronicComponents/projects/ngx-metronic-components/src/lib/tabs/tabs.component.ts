@@ -2,7 +2,7 @@ import { Component, OnInit, ViewChildren, QueryList, ContentChildren, AfterConte
 import { TabItemComponent } from './tab-item/tab-item.component';
 
 @Component({
-  selector: 'm-tabs',
+  selector: 'mc-tabs',
   templateUrl: './tabs.component.html',
   styleUrls: ['./tabs.component.scss']
 })
@@ -17,12 +17,12 @@ export class TabsComponent implements OnInit, AfterContentInit {
   }
 
   ngAfterContentInit() {
-    this.tabItems.first.active = true
+    this.tabItems.first.active = true;
   }
 
   selectTab(tab: TabItemComponent) {
-    this.tabItems.map(t => t.active = false)
-    tab.active = true
+    this.tabItems.map(t => t.active = false);
+    tab.active = true;
   }
 
 

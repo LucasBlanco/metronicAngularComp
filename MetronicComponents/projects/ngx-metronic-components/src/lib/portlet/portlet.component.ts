@@ -1,7 +1,7 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: "m-portlet-container",
+  selector: "mc-portlet-container",
   template: `
     <div class="m-portlet m-portlet--head-solid-bg">
       <ng-content select="m-portlet-header"></ng-content>

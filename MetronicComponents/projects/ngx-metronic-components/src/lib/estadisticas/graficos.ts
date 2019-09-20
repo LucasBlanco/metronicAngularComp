@@ -3,7 +3,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 declare var Chart: any;
 
 @Component({
-    selector: 'app-grafico',
+    selector: 'mc-grafico',
     template: ``
 })
 export class Grafico implements OnInit {

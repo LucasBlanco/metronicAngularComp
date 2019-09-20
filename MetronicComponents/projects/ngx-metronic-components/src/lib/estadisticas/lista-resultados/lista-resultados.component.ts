@@ -2,30 +2,30 @@ import { Component, OnInit, Input, AfterViewInit } from '@angular/core';
 import { Grafico } from '../graficos';
 
 export interface IListaResultados {
-  titulo: string,
-  subtitulo: string,
-  valor: number,
-  color: string
+  titulo: string;
+  subtitulo: string;
+  valor: number;
+  color: string;
 }
 
 @Component({
-  selector: 'm-lista-resultados',
+  selector: 'mc-lista-resultados',
   templateUrl: './lista-resultados.component.html',
   styleUrls: ['./lista-resultados.component.scss']
 })
 export class ListaResultadosComponent extends Grafico implements OnInit, AfterViewInit {
 
-  @Input() listaResultados: IListaResultados[] = []
+  @Input() listaResultados: IListaResultados[] = [];
   constructor() {
-    super()
+    super();
   }
 
   ngOnInit() {
   }
   ngAfterViewInit() {
     this.listaResultados.forEach((_, i) => {
-      this.runCountUp('resultado' + i)
-    })
+      this.runCountUp('resultado' + i);
+    });
   }
 
 }

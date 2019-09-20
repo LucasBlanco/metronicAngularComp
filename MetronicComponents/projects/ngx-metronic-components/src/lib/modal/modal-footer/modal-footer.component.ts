@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'm-modal-footer',
+  selector: 'mc-modal-footer',
   template: ` <div class="modal-footer">
   <ng-content></ng-content>
 </div>`

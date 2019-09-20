@@ -18,9 +18,9 @@ import { TablaComponent as MCTablaComponent } from './tabla/tabla.component';
 import { TabsComponent as MCTabsComponent } from './tabs/tabs.component';
 import { TabItemComponent as MCTabItemComponent } from './tabs/tab-item/tab-item.component';
 import { Grafico as MCGrafico } from './estadisticas/graficos';
-import { CommonModule as MCCommonModule } from '@angular/common';
-import { BrowserModule as MCBrowserModule } from '@angular/platform-browser';
-import { FormsModule as MCFormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -46,9 +46,9 @@ import { FormsModule as MCFormsModule } from '@angular/forms';
 
   ],
   imports: [
-    MCCommonModule,
-    MCBrowserModule,
-    MCFormsModule
+    CommonModule,
+    BrowserModule,
+    FormsModule
   ],
   exports: [
     MCGraficoBarrasComponent,

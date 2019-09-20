@@ -7,16 +7,16 @@ declare var $: any;
 export class ModalComponent implements OnInit {
 
   constructor() { }
-  @Input() idModa; l
-  @Input() titulo: strin; g
-  @Input() hideHeader: fals; e
+  @Input() idModal;
+  @Input() titulo: string;
+  @Input() hideHeader: false;
 
   ngOnInit() {
   }
 
   show = () => {
-    $('#' + this.idModal).appendTo'body'").modal('show');
-      / /$('#' + this.id).css("z-index", "1500");
+    $('#' + this.idModal).appendTo('body').modal('show');
+    // $('#' + this.id).css("z-index", "1500");
   }
   hide = () => {
     $('#' + this.idModal).modal('hide');

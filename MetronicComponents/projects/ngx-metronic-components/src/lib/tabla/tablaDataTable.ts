@@ -1,8 +1,8 @@
-import $ from "jquery";
+/*import $ from "jquery";
 import "datatables.net";
 import "datatables.net-bs4";
 import "datatables.net-responsive-dt";
-import "datatables.net-buttons-dt";
+import "datatables.net-buttons-dt";*/
 
 export class TablaDataTable {
   options = {

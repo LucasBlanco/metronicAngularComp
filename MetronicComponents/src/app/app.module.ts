@@ -1,6 +1,9 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 
+import {
+  NgxMetronicComponentsModule,
+} from './../../projects/ngx-metronic-components/src/lib/ngx-metronic-components.module';
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -8,7 +11,8 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    NgxMetronicComponentsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
